@@ -142,6 +142,12 @@ img {
   color: #2196f3;
 }
 
+
+.email-adress:hover .adress-list-img,
+.email-adress:focus .adress-list-img{
+  fill:#2196f3;
+}
+
 .phone-number {
   font-weight: 500;
   font-size: 14px;
@@ -154,6 +160,17 @@ img {
 .phone-number:focus {
   color: #2196f3;
 }
+
+.phone-number:hover .adress-list-img,
+.phone-number:focus .adress-list-img{
+  fill: #2196f3;
+}
+
+.adress-list-img{
+  fill: #757575;
+  cursor: pointer;
+}
+
 
 /*-----/HEADER-----*/
 
@@ -230,6 +247,16 @@ img {
   flex-basis: calc((100% - 90px) / 3);
   margin-top: 30px;
   margin-left: 30px;
+}
+
+.our-list-item-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: #F5F4FA;
+  margin-bottom: 30px;
 }
 
 .our-suptitle {
@@ -378,15 +405,76 @@ img {
 
 /*-----/OUR TEAM-----*/
 
+/*----- CLIENTS-----*/
+
+.clients-title{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  color: #212121;
+}
+
+.clients-list{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 94px;
+}
+
+.clients-list-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 94px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+
+.clients-list-item:hover, 
+.clients-list-item:focus{
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
+
+.clients-list-item:not(:last-child){
+  margin-right: 30px;
+}
+
+.clients-list-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 106px;
+  height: 60px;
+}
+
+.clients-list-icon{
+  fill: #AFB1B8;
+}
+
+.clients-list-icon:hover, 
+.clients-list-icon:focus{
+  fill: #2196f3;
+}
+/*-----/CLIENTS-----*/
+
 /*-----FOOTER-----*/
 
 .footer {
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .footer-logo-box {
   margin-bottom: 20px;
+  width: 250px;
 }
 
 .footer-item {
@@ -424,6 +512,49 @@ img {
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-title{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+
+}
+
+.footer-box-right{
+  width: 206px;
+  height: 80px;
+  margin-left: 70px; 
+}
+
+.footer-list-right{
+  display:flex;
+  justify-content: center;
+}
+
+.footer-list-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #3f4049;
+}
+
+.footer-list-link:hover,
+.footer-list-link:focus{
+  background-color: #2196f3;
+}
+
+.footer-list-icon{
+  fill: #fff;
 }
 
 /*-----/FOOTER-----*/
